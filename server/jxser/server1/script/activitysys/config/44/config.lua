@@ -24,8 +24,8 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	nId = 1,
 	szMessageType = "NpcOnDeath",
 	szName = "´ß¹Öµ«¢äÁ«Åº±ý",
-	nStartDate = nil, 
-        nEndDate = nil, 
+	nStartDate = 202404020000, 
+        nEndDate = 202505010000, 
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -35,7 +35,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		--{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,3524,1,0,0},},1,"8"} },
+		{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,1775,1,0,0},},20,"8"} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -43,8 +43,8 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	nId = 2,
 	szMessageType = "NpcOnDeath",
 	szName = "´ß¹Öµ«¢ä¢Ì¶¹±ý",
-	nStartDate = nil, 
-        nEndDate = nil, 
+	nStartDate = 202404020000, 
+        nEndDate = 202505010000, 
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -54,7 +54,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		--{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,3524,1,0,0},},1,"8"} },
+		{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,1775,1,0,0},},20,"8"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -62,8 +62,8 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	nId = 3,
 	szMessageType = "NpcOnDeath",
 	szName = "´ß¹Öµ«¢äÓãÍ·",
-	nStartDate = nil, 
-        nEndDate = nil, 
+	nStartDate = 202404020000, 
+        nEndDate = 202505010000, 
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -72,7 +72,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		--{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,3524,1,0,0},},1,"8"} },
+		{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,1774,1,0,0},},20,"8"} },
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -80,8 +80,8 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	nId = 4,
 	szMessageType = "ClickNpc",
 	szName = "Íæ¼Òµã»÷ÇÚÀÍÀÏÅ©",
-	nStartDate = nil,
-	nEndDate  = nil,
+	nStartDate = 202404020000,
+	nEndDate  = 202505010000,
 	tbMessageParam = {"T©y H¹ Th­¬ng Nh©n"},
 	tbCondition = 
 	{
@@ -99,18 +99,21 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	nId = 5,
 	szMessageType = "CreateCompose",
 	szName = "Ta muèn ®æi Kim Bµi",
-	nStartDate = nil, 
-        nEndDate = nil, 
+	nStartDate = 202404020000, 
+        nEndDate = 202505010000, 
 	tbMessageParam = {"Kim Bµi",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"M¶nh Kim Bµi",{tbProp={6,1,1774,1,0,0},},100} },
+		{"AddOneMaterial",	{"M¶nh Kim Bµi",{tbProp={6,1,1774,1,0,0},},5} },
                 {"AddOneMaterial",	{"2000000 l­îng",{nJxb=2000000,},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi tham gia ho¹t ®éng.",">="} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1481,1,0,0},nExpiredTime=43200,},1,"[TÝnh n¨ng socola] [Hîp thµnh socola]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1480,1,0,0},nExpiredTime=43200,},1,"[TÝnh n¨ng socola] [Hîp thµnh socola]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1479,1,0,0},nExpiredTime=43200,},1,"[TÝnh n¨ng socola] [Hîp thµnh socola]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1478,1,0,0},nExpiredTime=43200,},1,"[TÝnh n¨ng socola] [Hîp thµnh socola]"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -118,12 +121,12 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	nId = 6,
 	szMessageType = "CreateCompose",
 	szName = "Ta muèn ®æi Ngäc Bµi",
-	nStartDate = nil, 
-        nEndDate = nil, 
+	nStartDate = 202404020000, 
+        nEndDate = 202505010000, 
 	tbMessageParam = {"Ngäc Bµi",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"M¶nh Ngäc Bµi",{tbProp={6,1,1775,1,0,0},},200} },
+		{"AddOneMaterial",	{"M¶nh Ngäc Bµi",{tbProp={6,1,1775,1,0,0},},10} },
                 {"AddOneMaterial",	{"5000000 l­îng",{nJxb=5000000,},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi tham gia ho¹t ®éng.",">="} },
 	},
